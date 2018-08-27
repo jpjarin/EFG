@@ -25,22 +25,35 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
-  <!-- NAVIGATION -->
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="main">
+  <section id="intro-section" class="intro-section intro-effect-push">
+    <div id="large-header" class="large-header">
+
+      <!-- NAVIGATION -->
         <nav id="nav" class="navbar navbar-expand-md">
         <div class="container-fluid">
           <div class="d-flex flex-column flex-lg-row text-center">
           <span class="nav-link py-0"><i class="fas fa-phone-square"></i>&nbsp; (045) 491 1412</span><span class="nav-link py-0"><i class="fas fa-mobile-alt"></i>&nbsp; 0998 982 0394</span></div>
           <button class="custom-toggler navbar-toggler ml-auto mr-2" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="custom-toggler">MENU <i class="fas fa-bars"></i></span>
+            <span class="custom-toggler"><i class="fas fa-bars"></i></span>
           </button>
 
           <div class="collapse navbar-collapse justify-content-end text-center" id="navbar-menu">
             <ul class="navbar-nav d-flex flex-row justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link" href="#intro-section">Home</a>
-              </li>
               <li class="nav-item active">
                 <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -58,9 +71,6 @@
         </div>
       </nav>
 
-<div class="main">
-  <section id="intro-section" class="intro-section top">
-    <div id="large-header" class="large-header">
       <div class="intro"><canvas id="demo-canvas"></canvas></div>
       <div class="hero-content container">
 
@@ -74,10 +84,46 @@
       </div>
     </div>
   </section>
-  <section id="about" class="">
-    <div style="height: 1000px">
-      
+  <section id="about" class="about-section container">
+    <div class="about-content">
+      <div class="">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+             <div class="d-flex flex-column">
+               <div class="row no-gutters">
+                 <div class="col-md-4">
+                   <img src="img/logo.png" class="img-fluid px-3" />
+                 </div>
+                 <div class="col-md-8 d-flex">
+                   <div class="about-heading text-center">
+                     <h1>Services Offered</h1>
+                     <hr class="line">
+                   </div>
+                 </div>
+               </div>
+             </div> 
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="row no-gutters">
+              <div class="col-12 col-md-10 fb-wrapper fb-page-wrapper">
+                <div class="container fb-container">
+                  <div class="fb-page" data-href="https://www.facebook.com/EllensFloraGarden" data-tabs="timeline,messages" data-width="500" data-height="4000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/EllensFloraGarden/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/EllensFloraGarden">Ellen&#039;s Flora Garden</a></blockquote></div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2 fb-wrapper">
+                  <div class="fb-text rotate3d">
+                    <h3>Our Facebook Page</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <section id="">
+    
   </section>
 </div>
   

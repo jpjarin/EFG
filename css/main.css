@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Lato:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Lato:300,400,900');
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -15,7 +15,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin:0;
     height: 100%;
 }
@@ -102,7 +102,7 @@ textarea {
    ========================================================================== */
 * { margin: 0; padding: 0; }
 body{
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin:0;
     height: 100%;
     background-color: #ffffff;
@@ -112,10 +112,29 @@ body{
 button{
   outline: none !important;
 }
+hr.line{
+  margin: 0.5em 0;
+  border-top: 1.5px solid #000000;
+  text-align: center;
+}
+hr.line:after{
+  content: "\f06c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1em;
+  display:inline-block;
+  position: relative;
+    top: -0.7em;
+    right: 2px;
+    padding: 0 0.25em;
+    color: #539c45;
+    background: #ffffff;
+
+}
 /*NAVIGATION*/
 #nav.navbar{
 
-    position: fixed;
+    position: absolute;
     bottom: 0;
     /*top: 15%;
     left: 50%;*/
@@ -140,8 +159,12 @@ a.navbar-brand{
     font-weight: 300;
     color: #ffffff;
 }
+a.nav-link{
+
+}
 a.nav-link:hover{
-  color: #cccccc;
+  color: #ffffff;
+  outline: 2px solid #ffffff;
 }
 .custom-toggler,i.fas.fa-bars {
   color: #ffffff;
@@ -149,7 +172,7 @@ a.nav-link:hover{
 
 .custom-toggler.navbar-toggler {
   border-color: #ffffff;
-  padding: 8px 10px;
+  padding: 8px 13px;
 } 
 
 /*INTRO SECTION*/
@@ -188,7 +211,7 @@ a.nav-link:hover{
     right: 0;
     bottom: 0;
     top: 0;
-    background-color: #444444;
+    background-color: #4e4e4e;
     width: 100%;
     height: 100%;
     opacity: 0.3;
@@ -211,89 +234,51 @@ a.nav-link:hover{
     text-transform: uppercase;
     color: #ffffff;
 }
-.scroll-down {
-  opacity: 1;
-  -webkit-transition: all .5s ease-in 3s;
-  transition: all .5s ease-in 3s;
-}
-
-.scroll-down {
-  position: relative;
-  bottom: 13vw;
-  left: 50%;
-  margin-left: -16px;
-  display: block;
-  width: 32px;
-  height: 32px;
-  border: 2px solid #FFF;
-  background-size: 14px auto;
-  border-radius: 50%;
-  z-index: 2;
-  -webkit-animation: bounce 2s infinite 2s;
-  animation: bounce 2s infinite 2s;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
-  transform: scale(1)
-}
-
-.scroll-down:before {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
-    transform: rotate(-45deg);
-    display: block;
-    width: 12px;
-    height: 12px;
-    content: "";
-    border: 2px solid white;
-    border-width: 0px 0 2px 2px;
-}
-
-@-webkit-keyframes bg-zoom {
-  0%   { -webkit-transform: scale(1,1); }
-  50% { -webkit-transform: scale(1.1,1.1); }
-  100% { -webkit-transform: scale(1,1); }
-}
-@-moz-keyframes bg-zoom {
-  0%   { -moz-transform: scale(1,1); }
-  50% { -moz-transform: scale(1.1,1.1); }
-  100% { -moz-transform: scale(1,1); }
-}
-@keyframes bg-zoom {
-  0%   { transform: scale(1,1); }
-  50% { transform: scale(1.1,1.1); }
-  100% { transform: scale(1,1); }
-}
-@keyframes bounce {
-  0%,
-  100%,
-  20%,
-  50%,
-  80% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  60% {
-    -webkit-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
-  }
-}
 /*........*/
 
 /*ABOUT SECTION*/
 #about{
-  min-height: calc(var(--vh, 1vh) * 100);
-    height: calc(var(--vh, 1vh) * 100);
+  position: relative;
+  min-height: 100vh;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  background-color: #ffffff;
+  overflow: hidden;
 }
-
-
+.about-heading{
+  margin:auto 0;
+}
+.about-heading h1{
+  font-family: 'Lato',sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.about-content{
+    position: relative;
+    top: 80px;
+    width: 100%;
+}
+.fb-container{
+  overflow-y: scroll; height: 80vh;
+}
+.fb-page-wrapper{
+  position: relative;left:2px;
+  padding: 10px 0;
+}
+.fb-wrapper{
+  background-color: #539c45;
+}
+.fb-text{
+  font-family: 'Lato',sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  width: 100%;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 15vh;
+    right: 50%;
+    text-transform: uppercase;
+}
 /*..........*/
 
 
@@ -324,6 +309,29 @@ a.nav-link:hover{
     display: none !important;
 }
 
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(90deg);
+
+/* Firefox */
+-moz-transform: rotate(90deg);
+
+/* IE */
+-ms-transform: rotate(90deg);
+
+/* Opera */
+-o-transform: rotate(90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+.rotate3d{
+  -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    transform: rotate3d(0,0,1,0deg);
+}
 /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility

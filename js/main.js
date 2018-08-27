@@ -108,7 +108,7 @@ $(window).on('load',function() {
       $('#nav').addClass('animated fadeInUp');
       }); 
 
-$(function() {
+$(document).ready(function(){
         $('a.nav-link').on('click', function(event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
@@ -117,10 +117,10 @@ $(function() {
             event.preventDefault();
           $('#navbar-menu').collapse('hide');  
         });
-    });
+});
       
 
-// $(window).scroll(function(){
-//     $(".top").css("opacity", 1 - $(window).scrollTop() / 250);
-//   });
+$(window).scroll(function(){
+    $("#large-header").css("opacity", 1 - $(window).scrollTop() / 250);
+  });
 
