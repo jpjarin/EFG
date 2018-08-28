@@ -120,7 +120,7 @@ $(document).ready(function(){
 });
       
 
-$(window).scroll(function(){
-    $("#large-header").css("opacity", 1 - $(window).scrollTop() / 250);
-  });
+// $(window).scroll(function(){
+//     $("#large-header").css("opacity", 1 - $(window).scrollTop() / 250);
+//   });
 
