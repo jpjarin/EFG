@@ -117,6 +117,12 @@ $(document).ready(function(){
             event.preventDefault();
           $('#navbar-menu').collapse('hide');  
         });
+                      
+  $(".fa").click(function() {  
+          $(this.parentNode).toggleClass("menuClicked");   
+         $(".fa").toggleClass("fa-bars fa-times");       
+    });
+
 });
       
 

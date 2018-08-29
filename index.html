@@ -84,7 +84,7 @@
                 <a class="nav-link" href="#gallery">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
               <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -112,6 +112,18 @@
       </div>
     </div>
   </section>
+
+ <div style="position: relative;">
+    <div class="menu">
+  <i class="fa fa-bars"></i>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+ </div>
   <section id="about" class="about-section container">
     <div class="about-content">
       <div class="">
@@ -151,10 +163,10 @@
             <div class="row no-gutters">
               <div class="col-12 col-md-10 fb-wrapper fb-page-wrapper">
                 <div class="container fb-container">
-                  <div class="fb-page" data-href="https://www.facebook.com/EllensFloraGarden" data-tabs="timeline,messages" data-width="500" data-height="4000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/EllensFloraGarden/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/EllensFloraGarden">Ellen&#039;s Flora Garden</a></blockquote></div>
+                  <div class="fb-page" data-href="https://www.facebook.com/EllensFloraGarden" data-tabs="timeline,messages" data-width="500" data-height="4000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/EllensFloraGarden" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/EllensFloraGarden">Ellen&#039;s Flora Garden</a></blockquote></div>
                   </div>
                 </div>
-                <div class="col-12 col-md-2 fb-wrapper">
+                <div class="col-12 col-md-2 fb-wrapper order-first order-md-2">
                   <div class="fb-text rotate3d">
                     <h3>Our Facebook Page</h3>
                   </div>
@@ -168,9 +180,45 @@
 
 <div id="green"><div class="green"></div></div>
 
-  <section id="" style="height: 200px; background-color: #008000;">
+  <section id="gallery" style="height: 1000px; background-color: #008000;">
     
   </section>
+
+<section id="contact" class="contact-us my-5">
+  <div class="container mt-5 pt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-wrapper">
+          <form name="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="col-md-6">
+                <div class="form-group input-group-lg">
+                <input type="text" name="name" id="name" placeholder="Name:" class="form-control" required="required">
+              </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group input-group-lg">
+                  <input type="email" name="email" id="email" placeholder="Email:" class="form-control" required="required">
+                </div>    
+              </div>
+            </div>
+          </form>
+          <div class="form-group">
+              <textarea name="message" id="message" class="form-control w-100" rows="9" cols="25" required="required" placeholder="Message:" style="resize: none;"></textarea>
+            </div>
+            <div class="form-group m-0">
+              <button type="submit" class="btn btn-send btn-block hover-fade" id="sendMessageButton">Send Message</button>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </div>
   
 

@@ -132,15 +132,12 @@ hr.line:after{
 
 }
 /*NAVIGATION*/
-#navigation{
+/*#navigation{
       position: absolute;
     top: 0;
     width: 100%;
     z-index: 99999;
-}
-
-
-
+}*/
 #nav.navbar{
 
     position: absolute;
@@ -183,6 +180,92 @@ a.nav-link:hover{
   border-color: #ffffff;
   padding: 8px 13px;
 } 
+
+.menu {
+    width: 70px;
+    height: 70px;
+    border-radius: 5%;
+    background-color: #75b149;
+    box-shadow: 1px 1px 10px 0px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    margin: 18px;
+}
+
+.fa {
+  font-family:'Font Awesome 5 Free';
+  font-size: 35px;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.menuClicked .fa {
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: all 0.1s ease-in-out;
+  
+}
+
+.menuClicked{
+  width: 200px;
+  height: 300px;
+  border-radius: 2px;
+
+}
+
+.menu ul {
+  display: none;
+}
+
+.menuClicked ul {
+  display: block;
+  list-style-type: none;
+  color: white;
+  display: block;
+  margin-top: 30px;
+  position: absolute;
+  top: 10px;
+  width: 60%;
+}
+
+.menuClicked ul a {
+  font-family: 'Roboto', sans-serif;
+  font-weignt: 700;
+  font: roboto;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.menuClicked ul a:hover {
+  color: black;
+}
+
+.menuClicked ul li {
+  border-bottom: 1px solid white;
+  padding: 10px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/*........*/
 
 /*INTRO SECTION*/
 #intro-section.intro-section{
@@ -294,6 +377,7 @@ a.nav-link:hover{
 
 .fb-container{
   overflow-y: scroll; 
+  -webkit-overflow-scrolling: touch;
   min-height: 518.391px;
   height: 518.391px;
 }
@@ -333,6 +417,25 @@ a.nav-link:hover{
 }
 /*..........*/
 
+
+/*CONTACT PAGE*/
+.contact-us{
+  position: relative;
+  z-index: 99;
+}
+input,textarea,button{
+  font-size: 18px !important; 
+  outline: none !important;
+  box-shadow: none !important;
+}
+.form-control:focus{
+  border-color: #008000;
+}
+
+.form-wrapper{
+  padding: 15px;
+  background-color: #eee;
+}
 
 
 
@@ -471,6 +574,29 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 .hero-content {
     top: 12%;
     left: 50%;
+}
+.fb-text{
+    width: 100%;
+    white-space: normal;
+    position: initial;
+    text-transform: uppercase;
+    padding: 10px 0;
+    text-align: center;
+    overflow:hidden;
+}
+.fb-text.rotate3d{
+      -webkit-writing-mode: initial;
+    writing-mode: initial;
+    transform: initial;
+}
+.fb-page-wrapper {
+    position: relative;
+    left: 0;
+    bottom: 1px;
+}
+.fb-text h3{
+  font-size: 25px;
+  margin:0;
 }
 }
 /* Smartphones (landscape) ----------- */
