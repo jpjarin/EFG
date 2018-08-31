@@ -69,13 +69,13 @@
       <!-- INTRO NAVIGATION -->
         <nav id="nav" class="navbar navbar-expand-md">
         <div class="container-fluid">
-          <div class="d-flex flex-column flex-lg-row text-center">
+          <div class="d-flex mx-auto text-center">
           <span class="nav-link py-0"><i class="fas fa-phone-square"></i>&nbsp; (045) 491 1412</span><span class="nav-link py-0"><i class="fas fa-mobile-alt"></i>&nbsp; 0998 982 0394</span></div>
-          <button class="custom-toggler navbar-toggler ml-auto mr-2" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <button class="custom-toggler navbar-toggler ml-auto mr-2" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="custom-toggler"><i class="fas fa-bars"></i></span>
-          </button>
+          </button> -->
 
-          <div class="collapse navbar-collapse justify-content-end text-center" id="navbar-menu">
+          <div class="collapse navbar-collapse justify-content-end text-center show" id="navbar-menu">
             <ul class="navbar-nav d-flex flex-row justify-content-center">
               <li class="nav-item active">
                 <a class="nav-link" href="#about">About</a>
@@ -99,7 +99,7 @@
         </div>
       </nav>
 
-      <div class="intro"><canvas id="demo-canvas"></canvas></div>
+      <div id="home" class="intro"><canvas id="demo-canvas"></canvas></div>
       <div class="hero-content container">
 
         <div class="py-5">
@@ -114,13 +114,13 @@
   </section>
 
  <div style="position: relative;">
-    <div class="menu">
-  <i class="fa fa-bars"></i>
+    <div id="menu" class="menu hidden animated">
+  <i id="fa" class="fa fa-bars noselect"></i>
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Menu</a></li>
-    <li><a href="#">Gallery</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </div>
  </div>
@@ -134,7 +134,7 @@
                  <div class="col-4 col-md-4">
                    <img src="img/logo.png" class="img-fluid px-3" style="width: 150px;"/>
                  </div>
-                 <div class="col-8 col-md-8 d-flex">
+                 <div class="col-8 col-md-8 d-flex order-first order-sm-1">
                    <div class="about-heading text-center">
                      <h1>Services Offered</h1>
                      <hr class="line">
@@ -185,9 +185,9 @@
   </section>
 
 <section id="contact" class="contact-us my-5">
-  <div class="container mt-5 pt-5">
+  <div class="container mt-5">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <div class="form-wrapper">
           <form name="contact-form" id="contactForm">
             <div class="form-row">
@@ -211,14 +211,46 @@
             </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="row">
-          
+      <div class="col-lg-6 order-first order-lg-2">
+        <div class="row my-4">
+          <div class="contact-info container-fluid text-center">
+            <div class="row px-3">
+              <div class="col-12 col-md-6 pb-3">
+                <h1>Contact Us</h1>
+                <hr class="line">
+              </div>
+              <div class="col-12 col-md-6">
+                <img src="img/logo.png" class="img-fluid contact-logo"/>
+              </div>
+              <div class="col-12">
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item d-flex flex-row">
+                    <i class="fas fa-phone-square"></i><div class="pl-3">(045) 491 1412</div>
+                  </div>
+                  <div class="list-group-item d-flex flex-row">
+                    <i class="fas fa-mobile-alt"></i><div class="pl-3">0998 982 0394</div>
+                  </div>
+                  <div class="list-group-item d-flex flex-row">
+                    <i class="fas fa-map-marker-alt"></i><div class="pl-3" style="max-width: 250px;">Brgy. San Rafael, McArthur Highway, Tarlac City (In front of City Mall)</div>
+                  </div>
+                  <div class="list-group-item d-flex flex-row">
+                    <i class="fab fa-facebook-square"></i><div class="pl-3"><a href="https://www.facebook.com/EllensFloraGarden" target="_blank">fb.com/EllensFloraGarden</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<footer class="footer">
+      <div class="container">
+        <small>Copyright &copy; Ellen's Flora Garden 2018</small>
+      </div>
+    </footer>
 </div>
   
 
