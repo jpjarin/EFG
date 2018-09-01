@@ -32,6 +32,7 @@
     function addListeners() {
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
+        window.addEventListener('orientationchange', orientationchange);
     }
 
     function scrollCheck() {
@@ -42,6 +43,14 @@
     function resize() {
         width = window.innerWidth;
         height = window.innerHeight;
+        largeHeader.style.height = height+'px';
+        canvas.width = width;
+        canvas.height = height;
+    }
+
+    function orientationchange() {
+        width = window.outerWidth;
+        height = window.outerHeight;
         largeHeader.style.height = height+'px';
         canvas.width = width;
         canvas.height = height;
@@ -146,6 +155,18 @@ $(document).ready(function(){
             }
             
         }
+
+        if($(this).scrollTop()>=$('#contact').position().top){
+        $('#menu').addClass('pot-color');
+        }else{
+            $('#menu').removeClass('pot-color');
+        }
+        // toScroll = $(document).height() - $(window).height() - 130;
+        //     if ( $(this).scrollTop() > toScroll ) {
+        //         $('#menu').addClass('pot-color');
+        //     }else{
+        //         $('#menu').removeClass('pot-color');
+        //     }
 
   });
 

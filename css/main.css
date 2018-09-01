@@ -186,7 +186,7 @@ a.nav-link:hover{
     height: 50px;
     border-radius: 5%;
     background-color: #75b149;
-    box-shadow: 1px 1px 10px 0px;
+    box-shadow: 1px 1px 10px 0px #557709;
     text-align: center;
     color: white;
     position: fixed;
@@ -199,7 +199,10 @@ a.nav-link:hover{
     left: 0;
     margin: 5px;
 }
-
+.menu.pot-color{
+  background-color: #f37438;
+  box-shadow: 1px 1px 10px 0px #924724;
+}
 #fa.fa {
   font-family: 'Font Awesome 5 Free';
     font-size: 25px;
@@ -348,9 +351,9 @@ a.nav-link:hover{
 #about{
   position: relative;
   min-height: 100vh;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  background-color: #ffffff;
+  /*height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);*/
+  background-color: transparent;
   overflow: hidden;
 }
 .about-heading{
@@ -409,18 +412,54 @@ a.nav-link:hover{
   background-color: #008000;
 }
 .green{
-      background-color: #008000;
+      background-color: #a3d269;
     height: 100vh;
     width: 100vw;
     position: relative;
-    bottom: 210px;
-    z-index: 1;
+    bottom: 100px;
+    z-index: -1;
+}
+.grass{
+  position: absolute;
+  bottom: -90px;
 }
 /*..........*/
 
+/*GALLERY*/
+
+#gallery{
+  padding-top: 1.8rem;
+  min-height: 1000px;
+  background-color: #a3d269;
+}
+.gallery{
+  position: relative;
+  z-index: 5;
+}
+#gallery .gallery-heading{
+  margin:auto 0;
+}
+#gallery .gallery h1{
+  font-family: 'Lato',sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+#gallery hr.line:after {
+    background: #a3d269;
+}
+
+/*.......*/
 
 /*CONTACT PAGE*/
+.pot-head{
+  height: 80px; background-color: #9e4315;
+}
+#contact hr.line:after {
+    color: #4fdc34;
+    background: #ce6d3d;
+}
 .contact-us{
+  background-color: #ce6d3d;
   position: relative;
   z-index: 99;
 }
@@ -462,7 +501,7 @@ input,textarea,button{
 #contact .fas,#contact .fab{
   position: relative;
   top: 4px;
-  color: #136b03;
+  color: #772c06;
 }
 #contact .contact-logo{
   position: absolute;
@@ -479,10 +518,10 @@ input,textarea,button{
   font-family: 'Lato', sans-serif;
   font-weight: normal;
   font-size: 75%;
- background-color: #008000;
+ background-color: #af5931;
  text-align: center;
  padding:1rem 0; 
- color: #ffffff;
+ color: #311000;
  text-transform: uppercase;
  letter-spacing: 0.5px;
 }
@@ -653,6 +692,15 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   font-size: 25px;
   margin:0;
 }
+.grass{
+  bottom: 490px;
+}
+.green{
+  bottom: 490px;
+}
+#gallery .gallery-heading {
+    margin: auto;
+}
 #contact .contact-logo {
     position: relative;
     z-index: 1;
@@ -664,10 +712,17 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 }
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) and (orientation:landscape) {
+@media only screen and (min-width : 321px) and (max-width : 767px;) (orientation:landscape) {
 .hero-content {
     top: 30%;
     left: 50%;
+}
+.grass {
+    bottom: 380px;
+}
+.green {
+    bottom: 440px;
+    height: 150vh;
 }
 }
 /* Tablets ----------- */
@@ -681,7 +736,16 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 .nav-link{
   font-size: 1rem;
-}    
+}
+.grass {
+    bottom: 455px;
+}
+.green{
+  bottom: 500px;
+} 
+#gallery .gallery-heading {
+    margin: auto;
+}   
 }
 /* Tablets (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
@@ -692,8 +756,17 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 .intro-img {
     width: 70%;
 }
+#about{
+  min-height: 80vh;
+}
 .contact-heading{
   font-size: 1rem;
+}
+.grass{
+  bottom: -115px;
+}
+.green{
+  bottom: 100px;
 }
 }
 /* Laptops ----------- */
