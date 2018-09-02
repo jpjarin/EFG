@@ -1,3 +1,14 @@
+$(window).on('DOMContentLoaded', function() {
+      var Body = $('body,html');
+      Body.css({"overflow":"hidden"});
+  });
+  $(window).on('load', function() {
+      $('.preload').fadeOut();
+      $('#preload').css({"display":"none"});
+      $('body,html').css({"overflow":"visible"});
+  });
+
+
 (function() {
 
     var width, height, largeHeader, canvas, ctx, circles, target, animateHeader = true;
@@ -200,7 +211,7 @@ $('.magnificPopup').magnificPopup({
         
       });
 
-      // $('.magnificPopup').magnificPopup({
+      // $('.magnificPopup-gallery').magnificPopup({
       //     items: [
       //       {
       //         src: 'img/50.jpg'

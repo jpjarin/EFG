@@ -182,6 +182,7 @@ a.nav-link:hover{
 } 
 
 .menu {
+  /*cursor: pointer;*/
     width: 50px;
     height: 50px;
     border-radius: 5%;
@@ -382,8 +383,8 @@ a.nav-link:hover{
 .fb-container{
   overflow-y: scroll; 
   -webkit-overflow-scrolling: touch;
-  min-height: 518.391px;
-  height: 518.391px;
+  min-height: 600px;
+  height: 600px;
 }
 .fb-page-wrapper{
   position: relative;left:2px;
@@ -399,7 +400,7 @@ a.nav-link:hover{
     width: 100%;
     white-space: nowrap;
     position: absolute;
-    bottom: 3vh;
+    bottom: 10%;
     right: 35%;
     text-transform: uppercase;
 }
@@ -433,7 +434,7 @@ a.nav-link:hover{
 
 #gallery{
   padding-top: 1.8rem;
-  min-height: 1000px;
+  min-height: 100vh;
   background-image: url('../img/green.png');
   background-size: cover;
   /*background-color: #a3d269;*/
@@ -466,6 +467,7 @@ a.nav-link:hover{
   background: transparent;
   text-align: center;
   display: flex;
+  padding: 0;
 }
 .imghvr-blur:hover>img {
   -webkit-transition: all 100ms ease-in-out;
@@ -790,6 +792,9 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 #gallery .gallery-heading {
     margin: auto;
 }
+.fa-3x {
+    font-size: 1em;
+}
 #contact .contact-logo {
     position: relative;
     z-index: 1;
@@ -812,6 +817,9 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 .green {
     bottom: 440px;
     height: 150vh;
+}
+.fa-3x {
+    font-size: 1em;
 }
 }
 /* Tablets ----------- */
