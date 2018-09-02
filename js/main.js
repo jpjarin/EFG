@@ -180,6 +180,47 @@ $(document).ready(function(){
     });
     }
 
+$('.magnificPopup').magnificPopup({
+        delegate: 'a', 
+        type: 'image',
+        preloader: true,
+        closeOnContentClick: false,
+        mainClass: 'mfp-with-zoom',
+        zoom: {
+          enabled: true,
+
+          duration: 300,
+          easing: 'ease-in-out',
+
+          opener: function(openerElement) {
+
+            return openerElement.is('a') ? openerElement : openerElement.find('a');
+          }
+        }
+        
+      });
+
+      // $('.magnificPopup').magnificPopup({
+      //     items: [
+      //       {
+      //         src: 'img/50.jpg'
+      //       },
+      //       {
+      //         src: 'img/90.jpg',
+      //       },
+      //       {
+      //         src: 'img/100.jpg',
+      //       },
+      //       {
+      //         src: 'img/120.jpg',
+      //       }
+      //     ],
+      //     gallery: {
+      //       enabled: true
+      //     },
+      //     type: 'image',
+      //     preloader: true,
+      // });
 
 // END OF DOC READY FUNCTION  
 });

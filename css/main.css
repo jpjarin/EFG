@@ -409,11 +409,15 @@ a.nav-link:hover{
 #green{
   position: relative;
   height: 0;
-  background-color: #008000;
+  background-image: url('../img/green.png');
+  background-size: cover;
+  /*background-color: #008000;*/
 }
 .green{
-      background-color: #a3d269;
-    height: 100vh;
+  background-image: url('../img/green.png');
+  background-size: cover;
+      /*background-color: #a3d269;*/
+    height: 120vh;
     width: 100vw;
     position: relative;
     bottom: 100px;
@@ -430,14 +434,16 @@ a.nav-link:hover{
 #gallery{
   padding-top: 1.8rem;
   min-height: 1000px;
-  background-color: #a3d269;
+  background-image: url('../img/green.png');
+  background-size: cover;
+  /*background-color: #a3d269;*/
 }
 .gallery{
   position: relative;
   z-index: 5;
 }
 #gallery .gallery-heading{
-  margin:auto 0;
+  margin:auto 4rem;
 }
 #gallery .gallery h1{
   font-family: 'Lato',sans-serif;
@@ -445,15 +451,48 @@ a.nav-link:hover{
   text-transform: uppercase;
 }
 #gallery hr.line:after {
-    background: #a3d269;
+    background-image: url('../img/green.png');
 }
 
+
+[class^=imghvr-] *{
+  margin: auto;
+  color: #92ff43;
+}
+[class*=" imghvr-"], [class^=imghvr-] {
+  background:transparent;
+}
+[class*=" imghvr-"] figcaption, [class^=imghvr-] figcaption {
+  background: transparent;
+  text-align: center;
+  display: flex;
+}
+.imghvr-blur:hover>img {
+  -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+    opacity: 1;
+}
+.imghvr-blur{
+  outline: 3px solid #92ff43;
+  box-shadow: 0 0 20px 0px #4c4c4c;
+}
 /*.......*/
 
-/*CONTACT PAGE*/
 .pot-head{
-  height: 80px; background-color: #9e4315;
+  height: 85px; background-color: #9e4315;
+  box-shadow: -1px -1px 20px 0px #4a1800 inset;
 }
+.emboss {
+    box-shadow: 0 -30px 50px #777 inset !important;
+   /* border: 15px solid #bbb !important;*/
+}
+.bevel {
+    box-shadow: 0 -30px 50px #aaa inset, 0 0 15px #222 inset !important;
+    /*border: 15px solid #bbb !important;*/
+}
+
+/*CONTACT PAGE*/
 #contact hr.line:after {
     color: #4fdc34;
     background: #ce6d3d;
@@ -469,25 +508,75 @@ input,textarea,button{
   box-shadow: none !important;
 }
 .form-control:focus{
-  border-color: #008000;
+  border-color: #ce561b;
 }
 .form-wrapper{
-  padding: 15px;
-  background-color: #eee;
+  padding: 8px;
+  /*background-color: #eee;*/
+  background: #D1D1D1;
+    background: -moz-repeating-linear-gradient(-45deg, #EFC1CB , #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px,#F2F2F2 70px, #F2F2F2 80px);
+    background: -webkit-repeating-linear-gradient(-45deg, #EFC1CB , #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px,#F2F2F2 70px, #F2F2F2 80px);
+    background: -o-repeating-linear-gradient(-45deg, #EFC1CB , #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px,#F2F2F2 70px, #F2F2F2 80px);
+    background: repeating-linear-gradient(-45deg, #EFC1CB , #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #C2E8F5 40px, #C2E8F5 70px,#F2F2F2 70px, #F2F2F2 80px);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 3px 10px #3F3F3F;
+    -moz-box-shadow: 0px 3px 10px #3F3F3F;
+}
+.form{
+  background-color: #eeeeee;
+    padding: 15px;
+    border-radius: 8px;
 }
 #sendMessageButton{
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  background-color: #539c45;
+  background-color: #ec9c67;
   color: #ffffff;
 }
 #sendMessageButton:hover{
-  background-color: #248611;
+  background-color: #ce8b5f;
 }
-.contact-info,.contact-info h1{
+.contact-info,.contact-info h1,.form-header h1{
+  position: relative;
   font-family: 'Lato',sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
+}
+.form-header h1:before {
+    position: absolute;
+    bottom: 15px;
+    content: ' ';
+    text-align: center;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-position: 50% 50%;
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(182,180,180,0.7) 42%, rgba(180,178,178,0) 43%, rgba(168,166,166,0) 50%, rgba(180,178,178,0) 57%, rgba(182,180,180,0.7) 58%, rgba(238,237,237,0.3) 90%, rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(42%,rgba(182,180,180,0.7)), color-stop(43%,rgba(180,178,178,0)), color-stop(50%,rgba(168,166,166,0)), color-stop(57%,rgba(180,178,178,0)), color-stop(58%,rgba(182,180,180,0.7)), color-stop(90%,rgba(238,237,237,0.3)), color-stop(100%,rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(left, rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%);
+}
+.form-header h1:after {
+    font-size: 25px;
+    color: #D6CFCB;
+    content: '\f0e0';
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-family: "Font Awesome 5 Free";
+    text-shadow: 0px 1px 0px #fff;
+    -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
 }
 #contact .list-group-item {
   text-transform: uppercase;
@@ -696,7 +785,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   bottom: 490px;
 }
 .green{
-  bottom: 490px;
+  bottom: 495px;
 }
 #gallery .gallery-heading {
     margin: auto;

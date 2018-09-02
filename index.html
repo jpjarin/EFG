@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" href="css/imagehover.min.css">
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -183,9 +185,35 @@
   <section id="gallery">
     <div class="gallery container">
       <div class="row">
-        <div class="gallery-heading">
+        <div class="gallery-heading mb-5">
           <h1>Our Gallery</h1>
           <hr class="line">
+        </div>
+        <div class="container-fluid">
+          <div class="row no-gutters magnificPopup">
+            <div class="col-4 px-2">
+              <div class="gallery-item">
+                <figure class="imghvr-blur">
+                    <img src="img/gallery/13119086_1168095353214686_4430115794387844969_n.jpg">
+                    <a href="img/gallery/13119086_1168095353214686_4430115794387844969_n.jpg"></a>
+                    <figcaption>
+                        <i class="fas fa-3x fa-plus-circle"></i>
+                    </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="col-4 px-2">
+              <div class="gallery-item">
+                <figure class="imghvr-blur">
+                    <img src="img/gallery/13125024_1168106669880221_5097988167587438835_n.jpg">
+                    <a href="img/gallery/13125024_1168106669880221_5097988167587438835_n.jpg"></a>
+                    <figcaption>
+                        <i class="fas fa-3x fa-plus-circle"></i>
+                    </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -197,26 +225,31 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="form-wrapper">
-          <form name="contact-form" id="contactForm">
-            <div class="form-row">
-              <div class="col-md-6">
-                <div class="form-group input-group-lg">
-                <input type="text" name="name" id="name" placeholder="Name:" class="form-control" required="required">
-              </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group input-group-lg">
-                  <input type="email" name="email" id="email" placeholder="Email:" class="form-control" required="required">
-                </div>    
-              </div>
+          <div class="form">
+            <div class="form-header text-center pb-3 pt-1 px-3">
+              <h1 style="margin:0;color: #a09b97;">Contact Form</h1>
             </div>
-          </form>
-          <div class="form-group">
-              <textarea name="message" id="message" class="form-control w-100" rows="9" cols="25" required="required" placeholder="Message:" style="resize: none;"></textarea>
-            </div>
-            <div class="form-group m-0">
-              <button type="submit" class="btn btn-send btn-block hover-fade" id="sendMessageButton">Send Message</button>
-            </div>
+            <form name="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="col-md-6">
+                  <div class="form-group input-group-lg">
+                  <input type="text" name="name" id="name" placeholder="Name:" class="form-control" required="required">
+                </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group input-group-lg">
+                    <input type="email" name="email" id="email" placeholder="Email:" class="form-control" required="required">
+                  </div>    
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="message" class="form-control w-100" rows="9" cols="25" required="required" placeholder="Message:" style="resize: none;"></textarea>
+              </div>
+              <div class="form-group m-0">
+                <button type="submit" class="btn btn-send btn-block hover-fade" id="sendMessageButton">Send Message</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
       <div class="col-lg-6 order-first order-lg-2">
@@ -233,16 +266,16 @@
               <div class="col-12">
                 <div class="list-group list-group-flush">
                   <div class="list-group-item d-flex flex-row">
-                    <i class="fas fa-phone-square"></i><div class="pl-3">(045) 491 1412</div>
+                    <i class="fas fa-phone animated tada infinite"></i><div class="pl-3">(045) 491 1412</div>
                   </div>
                   <div class="list-group-item d-flex flex-row">
-                    <i class="fas fa-mobile-alt"></i><div class="pl-3">0998 982 0394</div>
+                    <i class="fas fa-mobile-alt animated wobble infinite"></i><div class="pl-3">0998 982 0394</div>
                   </div>
                   <div class="list-group-item d-flex flex-row">
-                    <i class="fas fa-map-marker-alt"></i><div class="pl-3" style="max-width: 250px;">Brgy. San Rafael, McArthur Highway, Tarlac City (In front of City Mall)</div>
+                    <i class="fas fa-map-marker-alt animated pulse infinite"></i><div class="pl-3" style="max-width: 250px;">Brgy. San Rafael, McArthur Highway, Tarlac City (In front of City Mall)</div>
                   </div>
                   <div class="list-group-item d-flex flex-row">
-                    <i class="fab fa-facebook-square"></i><div class="pl-3"><a href="https://www.facebook.com/EllensFloraGarden" target="_blank">fb.com/EllensFloraGarden</a></div>
+                    <i class="fab fa-facebook-square animated rubberBand infinite"></i><div class="pl-3"><a href="https://www.facebook.com/EllensFloraGarden" target="_blank">fb.com/EllensFloraGarden</a></div>
                   </div>
                 </div>
               </div>
@@ -267,6 +300,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/vendor/bootstrap.bundle.js"></script>
   <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
