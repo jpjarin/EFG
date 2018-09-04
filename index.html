@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Ellen's Flora Garden</title>
-  <meta name="description" content="">
+  <meta name="description" content="Website of Ellen's FLora Garden"/>
+  <meta property="og:description" content="Website of Ellen's Flora Garden" />
+  <meta property="og:site_name" content="Ellen's Flora Garden" />
+  <meta property="og:url" content="https://www.facebook.com/EllensFloraGarden/" />
+  <meta name="keywords" content="Ellen's Flora Garden, efg">
+  <meta name="author" content="Jan Paolo Viray Jarin"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="icon" type="image/png" href="img/logo.png"/>
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  
 
   <link rel="stylesheet" type="text/css" href="css/preloader.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/aos.css">
   <link rel="stylesheet" href="css/imagehover.min.css">
   <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/main.css">
@@ -36,6 +42,17 @@
   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<script> 
+var $buoop = {required:{e:-4,f:-3,o:-3,s:-1,c:-3},insecure:true,unsupported:true,api:2018.09 }; 
+function $buo_f(){ 
+ var e = document.createElement("script"); 
+ e.src = "//browser-update.org/update.min.js"; 
+ document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}
+</script>
 
 <!-- <nav id="navigation" class="navbar navbar-expand-lg navbar-light bg-light rounded">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
@@ -151,10 +168,10 @@
           <div class="col-12 col-lg-6 mb-5">
              <div class="d-flex flex-column">
                <div class="row no-gutters">
-                 <div class="col-4 col-md-4">
+                 <div class="col-5 col-md-4">
                    <img src="img/logo.png" class="img-fluid px-3" style="width: 150px;"/>
                  </div>
-                 <div class="col-8 col-md-8 d-flex order-first order-sm-1">
+                 <div class="col-7 col-md-8 d-flex order-first order-sm-1">
                    <div class="about-heading text-center">
                      <h1>Services Offered</h1>
                      <hr class="line">
@@ -180,15 +197,17 @@
              </div>
           </div>
           <div class="col-12 col-lg-6">
-            <div class="row no-gutters">
-              <div class="col-12 col-md-10 fb-wrapper fb-page-wrapper">
-                <div class="container fb-container">
-                  <div class="fb-page" data-href="https://www.facebook.com/EllensFloraGarden" data-tabs="timeline,messages" data-width="500" data-height="4000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/EllensFloraGarden" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/EllensFloraGarden">Ellen&#039;s Flora Garden</a></blockquote></div>
+            <div data-aos="slide-up" data-aos-duration="1500">
+              <div class="row no-gutters">
+                <div class="col-12 col-md-10 fb-wrapper fb-page-wrapper">
+                  <div class="container fb-container">
+                    <div class="fb-page" data-href="https://www.facebook.com/EllensFloraGarden" data-tabs="timeline,messages" data-width="500" data-height="4000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/EllensFloraGarden" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/EllensFloraGarden">Ellen&#039;s Flora Garden</a></blockquote></div>
+                    </div>
                   </div>
-                </div>
-                <div class="col-12 col-md-2 fb-wrapper order-first order-md-2">
-                  <div class="fb-text rotate3d">
-                    <h3>Our Facebook Page</h3>
+                  <div class="col-12 col-md-2 fb-wrapper order-first order-md-2">
+                    <div class="fb-text rotate3d">
+                      <h3>Our Facebook Page</h3>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -378,12 +397,12 @@
   <div class="container mt-5 pb-5">
     <div class="row">
       <div class="col-lg-6">
-        <div class="form-wrapper">
+        <div class="form-wrapper" data-aos="zoom-in" data-aos-duration="1500">
           <div class="form">
             <div class="form-header text-center pb-3 pt-1 px-3">
               <h1 style="margin:0;color: #a09b97;">Contact Form</h1>
             </div>
-            <form name="contact-form" id="contactForm">
+            <form id="contactForm">
               <div class="form-row">
                 <div class="col-md-6">
                   <div class="form-group input-group-lg">
@@ -403,6 +422,7 @@
                 <button type="submit" class="btn btn-send btn-block hover-fade" id="sendMessageButton">Send Message</button>
               </div>
             </form>
+            <div id="success"></div>
           </div>
         </div>
       </div>
@@ -451,18 +471,21 @@
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script> -->
+  <script src="js/aos.js"></script>
   <script src="js/vendor/bootstrap.bundle.js"></script>
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!-- <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script> -->
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
 </body>
 
 </html>
