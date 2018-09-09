@@ -18,6 +18,7 @@ html {
     /*overflow: hidden;*/
     margin:0;
     height: 100%;
+    margin-top: 0 !important;
 }
 
 /*
@@ -102,7 +103,7 @@ textarea {
    ========================================================================== */
 * { margin: 0; padding: 0; }
 body{
-    /*overflow: hidden;*/
+    overflow: hidden;
     margin:0;
     height: 100%;
     background-color: #ffffff;
@@ -845,7 +846,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 }
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) and (max-width : 767px;) (orientation:landscape) {
+@media only screen and (min-width : 321px) and (max-width : 767px) and (orientation : landscape) {
 .hero-content {
     top: 30%;
     left: 50%;
